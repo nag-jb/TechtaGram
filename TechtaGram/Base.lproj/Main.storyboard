@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4a-0k-k9u">
-                                <rect key="frame" x="94" y="574" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="scn-DM-PgJ">
+                                <rect key="frame" x="7" y="108" width="400" height="400"/>
+                                <color key="backgroundColor" red="0.18907973225721009" green="0.48461661128061922" blue="0.73445431472081224" alpha="0.073808609488315982" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="428-37-Usi"/>
+                                    <constraint firstAttribute="height" constant="400" id="LGI-GJ-XoL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4a-0k-k9u">
+                                <rect key="frame" x="107" y="552" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.59358494718309862" green="0.39345840669014087" blue="0.63261993838028174" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZyD-hR-6hx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="rXt-dq-7py"/>
+                                </constraints>
                                 <state key="normal" title="Camera">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -28,10 +38,13 @@
                                     <action selector="takePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBF-nS-6nb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-du-MhO">
-                                <rect key="frame" x="237" y="574" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.76950374119999998" green="0.38570092430000003" blue="0.26361685740000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-du-MhO">
+                                <rect key="frame" x="227" y="552" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.18907973225721009" green="0.48461661128061922" blue="0.73445431472081224" alpha="0.59601537318694608" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6F5-h0-8vY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="s8d-hi-WYC"/>
+                                </constraints>
                                 <state key="normal" title="Album">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -39,10 +52,13 @@
                                     <action selector="openAlubum" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHR-Oc-Uxd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEn-vT-461">
-                                <rect key="frame" x="275" y="713" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEn-vT-461">
+                                <rect key="frame" x="287" y="682" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.49625880281690143" green="0.56131712147887325" blue="0.70227222711267601" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="S0l-Mv-TmU"/>
+                                    <constraint firstAttribute="height" constant="80" id="bGJ-ya-LOG"/>
+                                </constraints>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -50,10 +66,13 @@
                                     <action selector="savePhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUA-EI-IL6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPM-Iq-30C">
-                                <rect key="frame" x="167" y="713" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPM-Iq-30C">
+                                <rect key="frame" x="167" y="682" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.26743298536568194" green="0.24648073621477357" blue="0.66079076776649748" alpha="0.79765089897260277" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="GxG-Qm-67l"/>
+                                    <constraint firstAttribute="height" constant="80" id="WhA-5X-Bca"/>
+                                </constraints>
                                 <state key="normal" title="Share">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -61,10 +80,13 @@
                                     <action selector="snsPhoto" destination="BYZ-38-t0r" eventType="touchUpInside" id="YXq-F7-oaH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXV-rh-f4G">
-                                <rect key="frame" x="65" y="713" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXV-rh-f4G">
+                                <rect key="frame" x="47" y="682" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.59358494718309862" green="0.39345840669014087" blue="0.3941186179577465" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="7PO-Il-LrE"/>
+                                    <constraint firstAttribute="height" constant="80" id="qLL-Zb-vCL"/>
+                                </constraints>
                                 <state key="normal" title="Filter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -72,14 +94,23 @@
                                     <action selector="colorFilter" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGH-to-v8r"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="scn-DM-PgJ">
-                                <rect key="frame" x="47" y="107" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vXV-rh-f4G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="274" id="FZg-9g-G9J"/>
+                            <constraint firstItem="HcL-du-MhO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="K5I-P4-fV4"/>
+                            <constraint firstItem="bEn-vT-461" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="120" id="Vli-yt-Vs4"/>
+                            <constraint firstItem="HcL-du-MhO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="144" id="cs2-up-sBk"/>
+                            <constraint firstItem="scn-DM-PgJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="kI1-R2-rD8"/>
+                            <constraint firstItem="bEn-vT-461" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="274" id="kzI-Dh-Dnu"/>
+                            <constraint firstItem="KPM-Iq-30C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="274" id="llT-is-0fY"/>
+                            <constraint firstItem="l4a-0k-k9u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="144" id="ltK-cL-e9L"/>
+                            <constraint firstItem="l4a-0k-k9u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="moN-Nn-KCS"/>
+                            <constraint firstItem="vXV-rh-f4G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="t94-nS-uah"/>
+                            <constraint firstItem="scn-DM-PgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u08-8c-OWk"/>
+                            <constraint firstItem="KPM-Iq-30C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yyv-ey-czw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cameraImageView" destination="scn-DM-PgJ" id="XsP-CZ-EHw"/>
@@ -91,14 +122,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
